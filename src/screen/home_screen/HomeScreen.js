@@ -1,12 +1,13 @@
 import React, { useContext, useState } from 'react';
 import { View, StyleSheet, Text } from 'react-native';
-import AppContext from '../context/AppContext';
+import List from './List';
+import AppContext from '../../context/AppContext';
 
 const HomeScreen = () => {
-    const data = useContext(AppContext);
+    const {data} = useContext(AppContext);
     return (
         <View style={styles.container}>
-            <Text>Welcome to home screen</Text>
+           <List data={data} />
         </View>
     );
 };
@@ -14,7 +15,7 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
     container: {
         display: "flex",
-        margin: 12
+        margin: 8
     }
 });
 

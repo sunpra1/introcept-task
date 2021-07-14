@@ -3,7 +3,7 @@ import { View, Text, FlatList, StyleSheet } from 'react-native';
 import { color } from 'react-native-reanimated';
 import ListItem from './ListItem';
 
-const List = ({ data }) => {
+const List = ({ data, listItem, message }) => {
     if (data.length === 0)
         return <Text style={styles.text}>NO RECORD(S) YET</Text>;
 

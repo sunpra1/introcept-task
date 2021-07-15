@@ -5,14 +5,14 @@ import Card from '../../components/Card';
 
 const ListItem = ({ item }) => {
     return (
-        <Card>
-            <Text style= {styles.headline}>{item.name}</Text>
+        <Card style={styles.card}>
+            <Text style={styles.headline}>{item.name}</Text>
             <View style={styles.row}>
                 <View style={styles.rowItem}>
-                    <Text style={styles.subTitle}>COUNTRY: {item.country }</Text>
+                    <Text style={styles.subTitle}>COUNTRY: {item.country}</Text>
                 </View>
                 <View style={styles.rowItem}>
-                    <Text style={styles.subTitle}>PHONE BRAND: {item.favouritePhoneBrand }</Text>
+                    <Text style={styles.subTitle}>PHONE BRAND: {item.favouritePhoneBrand}</Text>
                 </View>
                 <View style={styles.rowItem}>
                     <Text style={styles.subTitle}>PHONE NUMBER: {item.phoneNumber}</Text>
@@ -42,5 +42,9 @@ const styles = StyleSheet.create({
         color: "#808080",
         fontSize: 11
 
+    },
+    card: {
+        padding: 12,
+        marginBottom: 12
     }
 });

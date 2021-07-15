@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 
 export default function Card({ style, children }) {
     return (
@@ -13,13 +13,11 @@ export default function Card({ style, children }) {
 
 const styles = StyleSheet.create({
     card: {
-        marginBottom: 8,
-        padding: 12,
-        borderColor: '#FFFFFF',
         shadowColor: '#000',
-        shadowOffset: { width: 1, height: 1 },
-        shadowOpacity: 0.1,
-        shadowRadius: 1,
+        borderColor: "#fff",
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
         elevation: 2.5
     }
 });

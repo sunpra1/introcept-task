@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
         },
         shadowOpacity: 0.25,
         shadowRadius: 4,
-        elevation: 5
+        elevation: 1.5
     },
     actionsWrapper: {
         alignSelf: "flex-end",
@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "flex-end",
         alignItems: "center",
-        marginTop: 24 
+        marginTop: 16
     },
     action: {
         paddingHorizontal: 8,

@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     },
     action: {
         marginHorizontal: 8,
-        color: "#00FF00"
+        color: "red"
     },
     actionWrapper: {
         flexDirection: "row"

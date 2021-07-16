@@ -21,12 +21,11 @@ const AddItemScreen = ({ navigation }) => {
     useLayoutEffect(() => {
         navigation.setOptions({
             title: "Add Item",
-            headerRight: () => <Text style={styles.action} onPress={onSavePressed} >SAVE</Text>
+            headerRight: () => <Text style={styles.action} onPress={() => onSavePressed()} >SAVE</Text>
         });
     }, [navigation]);
 
     onSavePressed = () => {
-        console.log(country, name, phoneNumber, favouritePhoneBrand);
         if (validate()) {
             add({ name, phoneNumber, country, favouritePhoneBrand });
             navigation.pop();
@@ -91,10 +90,9 @@ const AddItemScreen = ({ navigation }) => {
             delete errors[fieldName];
             setErrors({ ...errors });
         }
-
     };
 
-    function validate() {
+    validate = () => {
         const validarionErrors = {};
         if (Validator.isEmpty(name))
             validarionErrors.name = "Name is required.";
@@ -133,7 +131,7 @@ const AddItemScreen = ({ navigation }) => {
 
         setErrors(validarionErrors);
         return Object.keys(validarionErrors).length === 0;
-    }
+    };
 
     return (
         <View style={styles.container}>

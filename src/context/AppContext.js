@@ -1,8 +1,8 @@
 import React, { createContext, useState } from 'react';
 
-export default AppContext = createContext();
+const AppContext = createContext();
 
-export function AppProvider({children}) {
+export function AppProvider({ children }) {
 
     let [data, setData] = useState([{ name: "Sunil Prasai", country: "Nepal", favouritePhoneBrand: "One Plus", phoneNumber: 9849147995 }, { name: "Saugat Uprety", country: "USA", favouritePhoneBrand: "Samsung", phoneNumber: 9841668402 }]);
 
@@ -16,3 +16,5 @@ export function AppProvider({children}) {
         </AppContext.Provider>
     );
 }
+
+export default AppContext;

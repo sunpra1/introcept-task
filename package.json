@@ -22,13 +22,11 @@
     "react-native-safe-area-context": "3.2.0",
     "react-native-screens": "~3.4.0",
     "react-native-web": "^0.17.1",
-    "validator": "^13.6.0"
+    "validator": "^13.6.0",
+    "react-native-gesture-handler": "~1.10.2"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"
   },
-  "private": true,
-  "jest": {
-    "preset": "jest-expo"
-  }
+  "private": true
 }
